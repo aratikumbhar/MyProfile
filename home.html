@@ -2,25 +2,31 @@
 <html>
   <head>
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
     <style>
       h3 {
         color: rgb(250, 10, 58);
         background-color: rgb(156, 226, 203);
       }
-      span {
-        color: crimson;
+      h3,span{
+        font-family: 'IBM Plex Mono', monospace;
       }
       li {
         padding: 10px 10px 20px 10px;
+        font-family: 'IBM Plex Mono', monospace;
+      }
+      #summary {
+        list-style-type: upper-alpha;
       }
     </style>
   </head>
   <body>
     <h3>Career Objectives</h3>
-    TO WORK IN ORGANZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP
-    ORGANZATIONAL GROWTH
+    <span>  TO WORK IN ORGANZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANZATIONAL GROWTH</span>
     <h3>Professinal Summary</h3>
-    <ul>
+    <ol id="summary">
       <li>
         Having 1 years of experience in developing Single page Web Applications
         using <span> Angular 8 </span>,HTML5,CSS3 ,Bootstrap
@@ -40,6 +46,6 @@
       </li>
       <li>Knowledge of NodeJS</li>
       <li>Ability to work with people at all levels in the program</li>
-    </ul>
+    </ol>
   </body>
 </html>
