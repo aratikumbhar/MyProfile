@@ -2,44 +2,61 @@
 <html>
   <head>
     <title>Internal CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
     <style>
-      #Objective {
+      body {
+        background-image: ima;
+      }
+      #Objective,#roles {
         color: brown;
-        font-family: 'Sofia', cursive
-
-      } 
-      .carrerObjective{
-        color: aquamarine;
-        font-family: 'Sofia', cursive
-
-      } 
-    </style> <!-- when two different h2 tag color changing # and any name use-->
+        font-family: 'IBM Plex Mono', monospace;
+      }
+      .carrerObjective,#roles  {
+        font-family: 'IBM Plex Mono', monospace;
+      }
+      #roles{
+            margin-bottom: 50px;
+        }
+        #para{
+            margin-top: 100px;
+            border: 2px solid cadetblue ;
+            width: 200px;
+            height: 100px;
+            border-radius: 20px;
+        }
+    </style>
   </head>
 
   <body>
     <h2 id="Objective">Career Objectives</h2>
-    <hr>
+    <hr />
     <p class="carrerObjective">
       <strong> Seeking </strong> a <b> challenging</b> and
-      <u> rewarding career </u> in a reputed organization where my
-      <mark> technical skills </mark> would make &nbsp; &nbsp; &nbsp; a positive
+      <u> rewarding career </u> in a reputed organization where my<br>
+      <mark> technical skills </mark> would make  a positive
       contribution to the organization <br />
       and <small>guide me </small> in building a rewarding career at the same
       time enhancing my knowledge of <i> industry wide processes. </i>
     </p>
 
-    <hr>
-    <h2>Professional Summary</h2>
-    <p>
+    <hr />
+    <h2 id="Objective">Professional Summary</h2>
+    <p class="carrerObjective">
       &nbsp; &nbsp; &nbsp; &nbsp; Experience in using Chrome Developer Tool for
       debugging and Troubleshooting the code <br />
       &nbsp; &nbsp; &nbsp; &nbsp; Knowledge of NodeJS <br />
       &nbsp; &nbsp; &nbsp; &nbsp; Ability to work with people at all levels in
       the program
     </p>
+    <h2 id="roles"> Roles and Responsibilities </h2>
+
+    <p id="para">
+         This is para 
+    </p>
+
   </body>
 </html>
