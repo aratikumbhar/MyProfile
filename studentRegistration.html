@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Registration Form</title>
+    <title> Student Registration Form</title>
     <style>
       label{
-        color: rgb(214, 119, 41);
+        color: rgb(247, 9, 60);
       }
-      input[type="text"]{
-        color: aquamarine;
-        border: 1px solid rgb(226, 86, 86);
+      input[type="text"],input[type="number"],input[type="email"],input[type="password"],input[type="date"],
+      input[type="week"],input[type="time"],input[type="file"]{
+        color: rgb(252, 47, 11);
+        border: 1px solid rgb(4, 172, 250);
         border-radius: 20px;
+      }
+      ::placeholder{
+        color: rgb(153, 65, 240);
+        opacity: 1;
+      }
+      .bcs{
+        color: rgb(252, 47, 11);
+        border: 1px solid rgb(4, 172, 250);
+        border-radius: 20px;
+      }
+      #student{
+        margin-left: 50px;
       }
     </style>
   </head>
-
   <body>
-    <h3>Student Registration Form</h3>
+    <h3 id="student">Student Registration Form</h3>
     <form>
       <table>
         <tbody>
@@ -54,20 +66,20 @@
             <td> <label> Available in time </label> </td>
             <td> <input type="time"> </td>
           </tr>
-          <tr>
+          <!-- <tr>
             <td> <label> Profile photo </label> </td>
-            <td> <input type="file" > </td>
+            <td> <input type="file"> </td>
           </tr>
           <tr>
             <td> <label> Upload Graduation Mark sheet </label> </td>
             <td> <input type="file" multiple> </td>
-          </tr>
+          </tr> -->
           <tr>
             <td> <label> Graduation </label> </td>
             <td>
-              <select>
-                <option>  MCA</option>
-                <option> BCS </option>
+              <select class="bcs">
+                <option>  BCS</option>
+                <option> MCA </option>
                 <option> BCA </option>
                 <option> Bsc </option>
               </select>
@@ -91,11 +103,10 @@
             </td>
 
           </tr>
-
-          <tr>
+          <!-- <tr>
             <td><label> Age </label></td>
             <td><input type="number" placeholder="Only numbers" required /></td>
-          </tr>
+          </tr> -->
           <tr>
             <td><label> State </label></td>
             <td><input type="text" value="MH" readonly /></td>
@@ -106,11 +117,11 @@
           </tr>
           <tr>
             <td> <label> Present Address </label> </td>
-            <td> <textarea rows="8" cols="47"> </textarea> </td>
+            <td> <textarea rows="8" cols="47" class="bcs"> </textarea> </td>
           </tr>
           <tr>
-            <td> <input type="submit"> </td>
-            <td> <input type="reset"> </td>
+            <td> <input type="submit" class="bcs"> </td>
+            <td> <input type="reset" class="bcs"> </td>
           </tr>
         </tbody>
       </table>
